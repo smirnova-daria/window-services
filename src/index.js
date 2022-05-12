@@ -5,6 +5,9 @@ from './modules/modal'
 import {
 	timer
 } from './modules/timer'
+import {
+	smoothScroll
+} from './modules/smoothScroll'
 
 modal({
 	elementSelector: '.callback',
@@ -21,3 +24,5 @@ modal({
 })
 
 timer('20 may 2022 21:00')
+
+smoothScroll()
