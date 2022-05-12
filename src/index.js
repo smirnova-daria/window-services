@@ -1,5 +1,6 @@
 import {
-	one
-} from './modules/one'
+	modal
+}
+from './modules/modal'
 
-one()
+modal()
