@@ -2,7 +2,7 @@ import Swiper, {
 	Navigation
 } from 'swiper';
 import 'swiper/css';
-// import 'swiper/css/navigation';
+
 export const swiperBenefits = new Swiper('.swiper-benefits', {
 	loop: true,
 	modules: [Navigation],
