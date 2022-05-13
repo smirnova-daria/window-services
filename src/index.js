@@ -12,6 +12,9 @@ import {
 	swiperBenefits,
 	swiperServices
 } from './modules/swiper'
+import {
+	calculate
+} from './modules/calculate'
 
 modal({
 	elementSelector: '.callback',
@@ -40,3 +43,5 @@ modal({
 timer('20 may 2022 21:00')
 
 smoothScroll()
+
+calculate()
