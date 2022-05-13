@@ -1582,6 +1582,8 @@ input.error {
 .benefits__item {
   width: 100%;
   max-width: 185px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .benefits-arrows {

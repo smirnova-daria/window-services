@@ -13,5 +13,14 @@ module.exports = {
 			directory: './dist',
 			watch: true
 		}
+	},
+	module: {
+		rules: [{
+			test: /\.css$/,
+			use: [
+				"style-loader",
+				"css-loader"
+			],
+		}, ]
 	}
 }

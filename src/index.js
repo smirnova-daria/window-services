@@ -8,6 +8,10 @@ import {
 import {
 	smoothScroll
 } from './modules/smoothScroll'
+import {
+	swiperBenefits,
+	swiperServices
+} from './modules/swiper'
 
 modal({
 	elementSelector: '.callback',
