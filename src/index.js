@@ -23,6 +23,16 @@ modal({
 	closeSelector: '.services-modal__close',
 })
 
+modal({
+	elementSelector: '.document-overlay',
+	modalSelector: '.image-modal',
+	overlaySelector: '.overlay',
+	closeSelector: '.image-modal__close',
+	isImageModal: true,
+	boxElementSelector: '.sertificate-document',
+	modalBodySelector: '.image-modal__body'
+})
+
 timer('20 may 2022 21:00')
 
 smoothScroll()
