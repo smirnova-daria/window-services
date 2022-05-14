@@ -15,6 +15,9 @@ import {
 import {
 	calculate
 } from './modules/calculate'
+import {
+	sendForm
+} from './modules/sendForm'
 
 modal({
 	elementSelector: '.callback',
@@ -45,3 +48,18 @@ timer('20 may 2022 21:00')
 smoothScroll()
 
 calculate()
+
+sendForm({
+	formSelector: '[name="action-form"]',
+	additionalData: [{
+		type: 'input',
+		selector: '#calc-total'
+	}]
+})
+sendForm({
+	formSelector: '[name="action-form2"]',
+	additionalData: [{
+		type: 'input',
+		selector: '#calc-total'
+	}]
+})
