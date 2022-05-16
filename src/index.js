@@ -18,6 +18,9 @@ import {
 import {
 	sendForm
 } from './modules/sendForm'
+import {
+	comments
+} from './modules/comments'
 
 modal({
 	elementSelector: '.callback',
@@ -63,3 +66,5 @@ sendForm({
 		selector: '#calc-total'
 	}]
 })
+
+comments()

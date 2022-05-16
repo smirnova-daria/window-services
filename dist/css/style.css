@@ -693,6 +693,9 @@ p.services-image_mobile {
   width: 39px;
   height: 33px;
 }
+.rotate:after {
+  transform: scale(-1, 1);
+}
 .review-arrow-left {
   margin-left: 39px;
 }
