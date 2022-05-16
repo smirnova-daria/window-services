@@ -2,7 +2,7 @@ export const comments = () => {
 	const reviewsBlock = document.querySelector('#reviews .comments-container')
 
 	//время для смены блоков с комментариями
-	const timerInterval = 5000
+	const timerInterval = 20000
 
 	let hideSlide = 0
 	let openSlide = 3
