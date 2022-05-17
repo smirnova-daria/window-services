@@ -9,7 +9,12 @@ export const sendForm = ({
 }) => {
 	const form = document.querySelector(formSelector)
 	const statusBlock = document.createElement('div')
-	form.append(statusBlock)
+	try {
+		form.append(statusBlock)
+	} catch (error) {
+		console.log(error.message)
+	}
+
 
 	const sendData = (data) => {
 		return fetch('https://jsonplaceholder.typicode.com/posts', {

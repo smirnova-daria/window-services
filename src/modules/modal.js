@@ -1,6 +1,9 @@
 import {
 	animate
 } from './helpers'
+import {
+	sendForm
+} from './sendForm'
 
 export const modal = ({
 	elementSelector,
@@ -17,6 +20,7 @@ export const modal = ({
 		const modal = document.querySelector(modalSelector)
 		const overlay = document.querySelector(overlaySelector)
 		const closeBtn = modal.querySelector(closeSelector)
+		const modalForm = modal.querySelector('form')
 
 		const openModal = (e) => {
 			e.preventDefault()
@@ -68,6 +72,16 @@ export const modal = ({
 			img.setAttribute('src', originalImgSrc)
 			img.setAttribute('alt', 'certificate')
 			modalBody.append(img)
+		}
+
+		if (modalForm) {
+			sendForm({
+				formSelector: `${modalSelector} form`,
+				additionalData: [{
+					type: 'input',
+					selector: '#calc-total'
+				}]
+			})
 		}
 
 		buttons.forEach(button => {

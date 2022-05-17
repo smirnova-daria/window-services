@@ -25,7 +25,6 @@ export const swiperBenefits = new Swiper('.swiper-benefits', {
 })
 
 export const swiperServices = new Swiper('.swiper-services', {
-	loop: true,
 	modules: [Navigation, Grid],
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -34,9 +33,11 @@ export const swiperServices = new Swiper('.swiper-services', {
 	slidesPerView: 2,
 	breakpoints: {
 		320: {
+			loop: true,
 			slidesPerView: 1,
 		},
 		576: {
+			loop: false,
 			slidesPerView: 1,
 			grid: {
 				fill: 'row',
@@ -45,6 +46,7 @@ export const swiperServices = new Swiper('.swiper-services', {
 
 		},
 		1200: {
+			loop: true,
 			slidesPerView: 2,
 			grid: {
 				rows: 1,
