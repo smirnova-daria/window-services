@@ -9,8 +9,7 @@ import {
 	smoothScroll
 } from './modules/smoothScroll'
 import {
-	swiperBenefits,
-	swiperServices
+	sliderServices
 } from './modules/swiper'
 import {
 	calculate
@@ -30,10 +29,12 @@ modal({
 })
 
 modal({
-	elementSelector: '.measurer-call',
+	elementSelector: 'measurer-call',
 	modalSelector: '.services-modal',
 	overlaySelector: '.overlay',
 	closeSelector: '.services-modal__close',
+	isServices: true,
+	servicesBlockSelector: '#services',
 })
 
 modal({
@@ -68,3 +69,5 @@ sendForm({
 })
 
 comments()
+
+sliderServices()

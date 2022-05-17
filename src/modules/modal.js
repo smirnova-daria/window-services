@@ -13,6 +13,8 @@ export const modal = ({
 	isImageModal = false,
 	boxElementSelector = '',
 	modalBodySelector = '',
+	isServices = false,
+	servicesBlockSelector = '',
 	animationDuration = 300
 }) => {
 	try {
@@ -84,14 +86,24 @@ export const modal = ({
 			})
 		}
 
-		buttons.forEach(button => {
-			button.addEventListener('click', (e) => {
-				if (isImageModal) {
-					changeModalContent(e)
+		if (isServices) {
+			const servicesBlock = document.querySelector(servicesBlockSelector)
+
+			servicesBlock.addEventListener('click', (e) => {
+				if (e.target.classList.contains(elementSelector)) {
+					openModal(e)
 				}
-				openModal(e)
 			})
-		})
+		} else {
+			buttons.forEach(button => {
+				button.addEventListener('click', (e) => {
+					if (isImageModal) {
+						changeModalContent(e)
+					}
+					openModal(e)
+				})
+			})
+		}
 
 		closeBtn.addEventListener('click', closeModal)
 
