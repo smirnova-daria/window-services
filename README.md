@@ -1,6 +1,8 @@
 # window-services
 
 Сайт по заказу услуг изготовления окон, дверей, балконов.
+<br>
+[Ссылка на Pages](https://smirnova-daria.github.io/window-services/)
 
 Выпускной проект для Glo Academy. По ТЗ выполнила:
 - Настройка модульной системы, Webpack
